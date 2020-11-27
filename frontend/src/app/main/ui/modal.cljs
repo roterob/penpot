@@ -92,9 +92,9 @@
 (mf/defc modal
   []
   (let [modal (mf/deref modal-ref)
-        ;; modal {:id "onboarding"
-        ;;        :type :onboarding
-        ;;        :props {}}
+        modal {:id "onboarding"
+               :type :onboarding
+               :props {}}
         ]
     (when modal
       [:& modal-wrapper {:data modal
