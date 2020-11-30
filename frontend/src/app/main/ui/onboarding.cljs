@@ -52,21 +52,40 @@
 
   ;; FEATURE SCREEN
 
+  ; [:div.modal-overlay
+  ;  [:div.modal-container.onboarding.feature
+  ;   [:div.modal-left
+  ;    [:img {:src "images/test-gif.gif" :border "0" :alt "Feature name"}]]
+  ;   [:div.modal-right
+  ;    [:div.modal-title
+  ;     [:h2 "Design with components"]]
+  ;    [:div.modal-content
+  ;     [:p "Create beautiful user interfaces in collaboration with all team members."]
+  ;     [:p "Maintain consistency at scale with components, libraries and design systems."]]
+  ;   [:div.modal-navigation
+  ;    [:button.btn-secondary "Continue"]
+  ;    [:span.skip "Skip"]
+  ;    [:ul.step-dots
+  ;     [:li.current]
+  ;     [:li]
+  ;     [:li]
+  ;     [:li]]]]]])
+
+  ;; FINAL SCREEN
+
   [:div.modal-overlay
-   [:div.modal-container.onboarding.feature
+   [:div.modal-container.onboarding.final
     [:div.modal-left
-     [:img {:src "images/test-gif.gif" :border "0" :alt "Feature name"}]]
+     ;[:img {:src "images/test-gif.gif" :border "0" :alt "Feature name"}]
+     [:h2 "Let's start!"]
+     [:p "Jump into your Penpot dashboard and start working with new files and projects."]
+     [:button.btn-primary "Jump into dashboard"]]
     [:div.modal-right
-     [:div.modal-title
-      [:h2 "Design with components"]]
-     [:div.modal-content
-      [:p "Create beautiful user interfaces in collaboration with all team members."]
-      [:p "Maintain consistency at scale with components, libraries and design systems."]]
-    [:div.modal-navigation
-     [:button.btn-secondary "Continue"]
-     [:span.skip "Skip"]
-     [:ul.step-dots
-      [:li.current]
-      [:li]
-      [:li]
-      [:li]]]]]])
+     [:h2 "Start creating a team"]
+     [:p "Give your team a name and start inviting collaborators and sharing your work."]
+     [:div.custom-input
+      [:label "Team name"]
+      [:input.input-text {:type "text" :label "Team name" :placeholder "Team name" :name "teamname"}]]
+     [:button.btn-primary "Create team"]]
+    [:img.deco {:src "images/deco-left.png" :border "0"}]
+    [:img.deco.right {:src "images/deco-right.png" :border "0"}]]])

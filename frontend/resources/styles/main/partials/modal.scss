@@ -367,6 +367,7 @@
   background-color: $color-white;
   box-shadow: 0 10px 10px rgba(0,0,0,.2);
   display: flex;
+  height: 350px;
   flex-direction: row;
   font-family: "sourcesanspro", sans-serif;
   min-width: 620px;
@@ -460,7 +461,7 @@
     }
   }
 
-  .btn-secondary {
+  button {
     font-family: "sourcesanspro", sans-serif;
   }
 
@@ -474,6 +475,36 @@
       }
     }
   }
+
+  &.final {
+    padding: $x-big;
+
+    .modal-left,
+    .modal-right {
+      align-items: center;
+      background-color: $color-white;
+      color: $color-black;
+      flex: 1;
+      flex-direction: column;
+      text-align: center;
+
+      h2 {
+        font-weight: 900;
+        margin-bottom: $big;
+        font-size: $fs20;
+      }
+
+      .btn-primary {
+        margin-top: auto;
+        width: 155px;
+      }
+    }
+
+    .modal-left {
+      border-right: 1px solid $color-gray-10;
+    }
+
+  }
 }
 
 .deco {
@@ -483,7 +514,7 @@
   width: 60px;
 
   &.right {
-    left: 568px;
+    left: 590px;
     top: 0;
   }
 }
