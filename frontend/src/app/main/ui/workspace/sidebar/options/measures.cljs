@@ -59,7 +59,7 @@
         (fn [event attr]
           (let [value (-> (dom/get-target event)
                           (dom/get-value)
-                          (d/parse-integer 0))]
+                          (d/parse-integer 1))]
             (st/emit! (udw/update-dimensions ids attr value))))
 
         on-proportion-lock-change
@@ -120,7 +120,7 @@
          [:span.element-set-subtitle (t locale "workspace.options.size")]
          [:div.input-element.width
           [:input.input-text {:type "number"
-                              :min "0"
+                              :min "1"
                               :no-validate true
                               :placeholder "--"
                               :on-click select-all
@@ -130,7 +130,7 @@
 
          [:div.input-element.height
           [:input.input-text {:type "number"
-                              :min "0"
+                              :min "1"
                               :no-validate true
                               :placeholder "--"
                               :on-click select-all
