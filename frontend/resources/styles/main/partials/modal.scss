@@ -369,7 +369,7 @@
   display: flex;
   flex-direction: row;
   font-family: "sourcesanspro", sans-serif;
-  min-width: 600px;
+  min-width: 620px;
   position: relative;
 
   .modal-left {
@@ -380,7 +380,7 @@
     display: flex;
     flex-shrink: 0;
     justify-content: center;
-    padding: $big;
+    padding: $x-big;
     width: 230px;
   }
 
@@ -415,6 +415,62 @@
         color: $color-black;
         font-size: 16px;
         margin-top: $small;
+      }
+    }
+
+    .modal-navigation {
+      align-items: center;
+      display: flex;
+      margin-top: auto;
+
+      .skip {
+        cursor: pointer;
+        font-size: $fs14;
+        margin-left: $big;
+
+        &:hover {
+          color: $color-black;
+        }
+      }
+    }
+
+    .step-dots {
+      align-items: center;
+      display: flex;
+      margin-bottom: 0;
+      margin-left: auto;
+
+      li {
+        background-color: $color-gray-10;
+        border-radius: 50%;
+        height: $small;
+        margin-left: $small;
+        width: $small;
+
+        &.current {
+          background-color: $color-primary;
+        }
+      }
+    }
+  }
+
+  &.black {
+    .modal-left {
+      background-color: $color-black;
+    }
+  }
+
+  .btn-secondary {
+    font-family: "sourcesanspro", sans-serif;
+  }
+
+  &.feature {
+    .modal-left {
+      padding: 0;
+
+      img {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
       }
     }
   }
