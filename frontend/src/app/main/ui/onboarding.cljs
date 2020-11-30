@@ -18,13 +18,17 @@
   [props]
   [:div.modal-overlay
    [:div.modal-container.onboarding
-    [:div.modal-left]
+    [:div.modal-left
+     [:img {:src "images/pot.png" :border "0" :alt "Penpot"}]]
     [:div.modal-right
      [:div.modal-title
       [:h2 "Welcome to Penpot!"]]
+     [:span.release "Alpha version 1.0"]
      [:div.modal-content
       [:p "We are very happy to introduce you to the very first Alpha 1.0 release."]
       [:p "Penpot is still at development stage and there will be constant updates. We hope you enjoy the first stable version."]]
     [:div.modal-navigation
-     [:button.btn-secondary "Continue"]]]]])
+     [:button.btn-secondary "Continue"]]]
+    [:img.deco {:src "images/deco-left.png" :border "0"}]
+    [:img.deco.right {:src "images/deco-right.png" :border "0"}]]])
 

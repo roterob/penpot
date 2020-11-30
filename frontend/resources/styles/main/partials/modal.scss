@@ -370,6 +370,7 @@
   flex-direction: row;
   font-family: "sourcesanspro", sans-serif;
   min-width: 600px;
+  position: relative;
 
   .modal-left {
     align-items: center;
@@ -379,6 +380,7 @@
     display: flex;
     flex-shrink: 0;
     justify-content: center;
+    padding: $big;
     width: 230px;
   }
 
@@ -394,10 +396,20 @@
       font-size: $fs28;
       font-weight: 900;
     }
+
+    .release {
+      background-color: $color-primary;
+      color: $color-black;
+      font-size: $fs12;
+      font-weight: bold;
+      margin-top: $small;
+      padding: 2px $x-small;
+      width: max-content;
+    }
     
     .modal-content {
       border: none;
-      padding: $medium 0;
+      padding: $big 0;
 
       p {
         color: $color-black;
@@ -405,6 +417,18 @@
         margin-top: $small;
       }
     }
+  }
+}
+
+.deco {
+  left: -10px;
+  position: absolute;
+  top: -18px;
+  width: 60px;
+
+  &.right {
+    left: 568px;
+    top: 0;
   }
 }
 
